@@ -327,8 +327,16 @@ footer {
     gap: 16px; /* Espaço entre a imagem e o texto */
 }
 
-.h1-hoodie-img {
+.hoodie-img {
     width: 300px; /* Ajuste o tamanho conforme necessário */
+    max-width: 100%; /* Nunca ultrapassa o container */
     height: auto;
     display: block;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .hoodie-img {
+        width: 180px; /* Ou outro valor menor para mobile */
+    }
 }
